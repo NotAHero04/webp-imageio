@@ -14,7 +14,6 @@ jobs:
     - name: Build with Android NDK
       run: src/android/ndk-build
     - name: Upload artifacts
-    - name: Upload a Build Artifact
       uses: actions/upload-artifact@v3.1.1
       with:
         name: webp-imageio
