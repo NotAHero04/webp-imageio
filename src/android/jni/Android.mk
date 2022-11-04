@@ -13,6 +13,7 @@ LOCAL_SRC_FILES := ../../main/c/webp-imageio.c
 LOCAL_CPPFLAGS  := -std=c11
 LOCAL_C_INCLUDES := $(JNI_SRC_PATH) $(LIBWEBP_PATH)/src
 LOCAL_STATIC_LIBRARIES := webp
+APP_ALLOW_MISSING_DEPS := true
 
 include $(BUILD_SHARED_LIBRARY)
 
