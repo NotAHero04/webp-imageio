@@ -12,7 +12,9 @@ jobs:
         ndk-version: r25b
         local-cache: true
     - name: Build with Android NDK
-      run: NDK_PROJECT_PATH=/home/runner/work/webp-imageio/webp-imageio/src/android ndk-build
+      run: |
+        git submodule update --init --recursive
+        NDK_PROJECT_PATH=/home/runner/work/webp-imageio/webp-imageio/src/android ndk-build
     - name: Upload artifacts
       uses: actions/upload-artifact@v3.1.1
       with:
