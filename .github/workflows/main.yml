@@ -20,7 +20,7 @@ jobs:
       uses: actions/upload-artifact@v3.1.1
       with:
         name: webp-imageio
-        path: build/*.so
+        path: ./src/android/libs/*/libwebp-imageio.so
 
       
     
